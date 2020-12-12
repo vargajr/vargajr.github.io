@@ -1,2 +1,2 @@
-# vargajr.github.io
-Demo page
+# todo
+training360 halado js todo project

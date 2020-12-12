@@ -3,57 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pair_game</title>
-    <link rel="stylesheet" href="./pair-game.css">
+    <title>todo</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/todo.css">
 </head>
 <body>
-    <article class="pair-game-container">
-        <h2>JAVASCRIPT PAIRS GAME</h2>
-        <h3>CLICK ANY CARD TO BEGIN</h3>
-        <P class="timeDisplay">clock</P>
-        <section class="card-desk">
-            <div class="card"><div class="card__inner" data-name="snowman">
-                <div class="card__face card__face--front">⛄</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="snowman">
-                <div class="card__face card__face--front">⛄</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="ball">
-                <div class="card__face card__face--front">⚽</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="ball">
-                <div class="card__face card__face--front">⚽</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="anchor">
-                <div class="card__face card__face--front">⚓</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="anchor">
-                <div class="card__face card__face--front">⚓</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="church">
-                <div class="card__face card__face--front">⛪</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="church">
-                <div class="card__face card__face--front">⛪</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="cloud">
-                <div class="card__face card__face--front">⛅</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
-            <div class="card"><div class="card__inner" data-name="cloud">
-                <div class="card__face card__face--front">⛅</div>
-                <div class="card__face card__face--back"></div>
-            </div></div>
+    <main class="main-content">
+
+        <h1>Daily To-Do List Manager</h1>
+        <section class="manager-window">
+
+            <section class="dateSection">
+                <span class="dateSection--weekday">Thursday</span><br>
+                <span class="dateSection--date">10-15-2020</span>
+            </section>
+
+            <section class="input-section">
+                <input type="text" placeholder="Take the garbage out">
+                <button>+</button>
+            </section>
+
+            <section class="list-section">
+
+                <div class="list invisible">
+                    <div class="pending">
+                        <h4>You have <span>0</span> pending items</h4>
+                        <div class="pendingItemContainer"></div>
+                    </div>
+                    <div class="completed">
+                        <h4>Completed tasks <span>0%</span></h4>
+                        <div class="completedItemContainer"></div>
+                    </div>
+                    <div class="controls">
+                        <span class="hide">Hide Complete</span><span class="clearAll">Clear All</span>
+                    </div>
+                </div>
+                
+                <div class="empty-list">
+                    <p class="icon-paragraph"><i class="fas fa-wine-glass-alt"></i><i class="fas fa-cocktail"></i></p>
+                    <h3>Time to chill! You have no todos.</h3>
+                </div>
+                
+            </section>
         </section>
-    </article>
-    <script src="./pair-game.js"></script>
+    </main>
+    
+    <!-- <div class="todoContainer">
+        <label class="todoLabel" for="1">
+            <input type="checkbox" id="1">
+            <span class="checkmark"></span>
+            <span class="note">ez egy todo</span>
+        </label>
+        <button class="todoDelButton delButtonIsHiding">
+            <i class="far fa-trash-alt"></i>
+        </button>
+    </div> -->
+    
+    <script src="./js/todo.js"></script>
 </body>
 </html>
